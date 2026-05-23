@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ダラットコーヒー | Vietnam Arabica Cau Dat 生豆</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--gd:#162d1e;--gm:#2a5438;--gl:#3d7a52;--cr:#f4ead8;--cd:#e8d9bf;--go:#c9a34a;--td:#1a1a14;--tm:#3d3d30;--wh:#ffffff;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:"Noto Serif JP",serif;background:var(--cr);color:var(--td);overflow-x:hidden;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 48px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(22,45,30,.92),transparent);transition:background .4s,padding .3s;}
+nav.scrolled{background:rgba(22,45,30,.97);padding:14px 48px;}
+.nl{font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:600;letter-spacing:.12em;color:var(--cr);text-decoration:none;}
+.nl span{color:var(--go);}
+.nls{display:flex;gap:32px;list-style:none;}
+.nls a{color:var(--cr);text-decoration:none;font-family:"Lato",sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;transition:opacity .2s,color .2s;}
+.nls a:hover{opacity:1;color:var(--go);}
+
+.hero{position:relative;height:100vh;min-height:640px;display:flex;align-items:flex-end;overflow:hidden;}
+.hbg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);animation:sz 18s ease-out forwards;}
+@keyframes sz{to{transform:scale(1);}}
+.hov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(8,18,10,.82) 0%,rgba(22,45,30,.42) 50%,rgba(8,18,10,.88) 100%);}
+.hc{position:relative;z-index:2;padding:0 8vw 14vh;max-width:820px;animation:fu 1.2s ease both;}
+.hew{font-family:"Lato",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--go);margin-bottom:20px;}
+.ht{font-family:"Cormorant Garamond",serif;font-size:clamp(3.2rem,8vw,7rem);font-weight:300;line-height:1.05;color:var(--cr);margin-bottom:28px;}
+.ht em{font-style:italic;color:var(--go);}
+.hs{font-size:1rem;font-weight:300;line-height:1.9;color:rgba(244,234,216,.82);max-width:500px;margin-bottom:48px;}
+.hcta{display:inline-block;padding:16px 44px;border:1px solid var(--go);color:var(--go);font-family:"Lato",sans-serif;font-weight:300;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:background .3s,color .3s;}
+.hcta:hover{background:var(--go);color:var(--gd);}
+.hscr{position:absolute;bottom:160px;right:8vw;writing-mode:vertical-rl;font-family:"Lato",sans-serif;font-weight:300;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(244,234,216,.45);display:flex;align-items:center;gap:12px;}
+.hscr::after{content:"";display:block;width:1px;height:60px;background:linear-gradient(to bottom,rgba(244,234,216,.4),transparent);}
+
+/* 認証バッジ帯 */
+.cert-bar{position:relative;z-index:3;background:rgba(22,45,30,.88);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;gap:0;border-top:1px solid rgba(201,163,74,.2);}
+.cert-item{flex:1;padding:20px 16px;text-align:center;border-right:1px solid rgba(201,163,74,.15);display:flex;flex-direction:column;align-items:center;gap:6px;}
+.cert-item:last-child{border-right:none;}
+.cert-badge{font-family:"Lato",sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.08em;color:var(--go);background:rgba(201,163,74,.12);border:1px solid rgba(201,163,74,.35);padding:4px 12px;border-radius:2px;}
+.cert-label{font-family:"Lato",sans-serif;font-weight:300;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,234,216,.6);}
+
+/* ABOUT */
+.abt{display:grid;grid-template-columns:1fr 1fr;background:var(--gd);color:var(--cr);min-height:560px;}
+.aph{position:relative;overflow:hidden;min-height:460px;}
+.aph img{width:100%;height:100%;object-fit:cover;transition:transform .8s;}
+.aph:hover img{transform:scale(1.04);}
+.apho{position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,var(--gd) 100%);}
+.abd{position:absolute;bottom:36px;left:36px;background:rgba(22,45,30,.92);border:1px solid rgba(201,163,74,.4);padding:20px 28px;text-align:center;}
+.abdn{font-family:"Cormorant Garamond",serif;font-size:2.6rem;font-weight:300;color:var(--go);line-height:1;}
+.abdl{font-family:"Lato",sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,234,216,.55);margin-top:5px;}
+.abw{padding:72px 56px;display:flex;flex-direction:column;justify-content:center;}
+.sl{font-family:"Lato",sans-serif;font-weight:300;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--go);margin-bottom:14px;}
+.dv{width:40px;height:1px;background:var(--go);margin-bottom:28px;}
+.st{font-family:"Cormorant Garamond",serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;line-height:1.25;margin-bottom:24px;}
+.abt .st{color:var(--cr);}
+.abw p{font-size:.91rem;line-height:2.1;font-weight:300;color:rgba(244,234,216,.75);margin-bottom:32px;}
+.asts{display:flex;gap:28px;flex-wrap:wrap;}
+.asi{border-left:1px solid var(--go);padding-left:18px;}
+.asn{font-family:"Cormorant Garamond",serif;font-size:1.8rem;font-weight:300;color:var(--go);}
+.ast{font-size:.68rem;font-family:"Lato",sans-serif;font-weight:300;color:rgba(244,234,216,.5);letter-spacing:.1em;margin-top:3px;}
+
+/* PROCESS */
+.proc{background:var(--cr);padding:80px 8vw;}
+.proc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:48px;border:1px solid var(--cd);}
+.proc-item{padding:28px 16px;text-align:center;border-right:1px solid var(--cd);position:relative;}
+.proc-item:last-child{border-right:none;}
+.proc-item::after{content:"▶";position:absolute;right:-9px;top:28px;color:var(--go);font-size:.6rem;z-index:1;}
+.proc-item:last-child::after{display:none;}
+.proc-icon{font-size:1.8rem;margin-bottom:10px;display:block;}
+.proc-en{font-family:"Lato",sans-serif;font-weight:400;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--go);margin-bottom:5px;}
+.proc-ja{font-family:"Noto Serif JP",serif;font-size:.78rem;font-weight:500;color:var(--gd);margin-bottom:6px;}
+.proc-desc{font-size:.72rem;line-height:1.65;font-weight:300;color:var(--tm);}
+
+/* WASHED DETAIL */
+.wash-detail{background:var(--gd);color:var(--cr);padding:80px 8vw;}
+.wash-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.wash-detail .st{color:var(--cr);}
+.wash-steps{display:flex;flex-direction:column;gap:0;}
+.wash-step{padding:24px 0;border-bottom:1px solid rgba(201,163,74,.15);display:grid;grid-template-columns:36px 1fr;gap:16px;align-items:start;}
+.wash-step-num{font-family:"Cormorant Garamond",serif;font-size:1.8rem;font-weight:300;color:rgba(201,163,74,.4);line-height:1;}
+.wash-step-title{font-family:"Cormorant Garamond",serif;font-size:1.05rem;color:var(--go);margin-bottom:5px;}
+.wash-step-body{font-size:.83rem;line-height:1.85;font-weight:300;color:rgba(244,234,216,.65);}
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+.spec-item{background:rgba(255,255,255,.05);border:1px solid rgba(201,163,74,.18);padding:14px 16px;}
+.spec-key{font-family:"Lato",sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--go);margin-bottom:4px;}
+.spec-val{font-family:"Cormorant Garamond",serif;font-size:1.1rem;color:var(--cr);}
+
+/* PRODUCTS */
+.ps{background:var(--cd);padding:100px 8vw;}
+.ph{margin-bottom:56px;}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.pc{background:var(--wh);overflow:hidden;box-shadow:0 2px 20px rgba(22,45,30,.07);transition:transform .35s,box-shadow .35s;}
+.pc:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(22,45,30,.15);}
+.piw{overflow:hidden;height:220px;}
+.pim{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s;}
+.pc:hover .pim{transform:scale(1.06);}
+.pcb{padding:28px 24px;}
+.por{font-family:"Lato",sans-serif;font-weight:300;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--go);margin-bottom:8px;}
+.pn{font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:400;color:var(--gd);margin-bottom:12px;line-height:1.2;}
+.pd{font-size:.84rem;line-height:1.9;font-weight:300;color:var(--tm);margin-bottom:16px;}
+.pt{display:inline-block;padding:4px 12px;font-family:"Lato",sans-serif;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--gl);color:var(--gm);}
+
+/* GALLERY */
+.gs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;height:260px;}
+.gs div{overflow:hidden;}
+.gs img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s,opacity .3s;}
+.gs div:hover img{transform:scale(1.06);opacity:.88;}
+
+/* WHY */
+.ws{background:linear-gradient(135deg,#0e1f13 0%,#2a5438 100%);padding:100px 8vw;color:var(--cr);}
+.wi{display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:start;}
+.ws .st{color:var(--cr);}
+.wsim{width:100%;height:380px;object-fit:cover;margin-top:24px;opacity:.75;}
+.wl{display:flex;flex-direction:column;}
+.wli{padding:28px 0;border-bottom:1px solid rgba(201,163,74,.15);display:grid;grid-template-columns:44px 1fr;gap:18px;}
+.wn{font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-weight:300;color:rgba(201,163,74,.28);line-height:1;}
+.wit{font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-weight:400;color:var(--go);margin-bottom:7px;}
+.wib{font-size:.85rem;line-height:1.9;font-weight:300;color:rgba(244,234,216,.65);}
+
+/* STRIP */
+.ss{display:grid;grid-template-columns:1fr 2fr;height:300px;gap:4px;}
+.ss div{overflow:hidden;}
+.ss img{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* CONTACT */
+.cs{background:var(--cr);padding:100px 8vw;}
+.ci{max-width:760px;margin:0 auto;}
+.cs .st{text-align:center;}
+.csub{text-align:center;font-size:.92rem;line-height:1.9;font-weight:300;color:var(--tm);margin-bottom:52px;margin-top:8px;}
+.cib{display:grid;grid-template-columns:repeat(3,1fr);background:var(--gd);margin-bottom:48px;}
+.cii{padding:28px 20px;text-align:center;border-right:1px solid rgba(201,163,74,.12);}
+.cii:last-child{border-right:none;}
+.cil{font-family:"Lato",sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--go);margin-bottom:8px;}
+.civ{font-family:"Cormorant Garamond",serif;font-size:1.15rem;color:var(--cr);line-height:1.3;}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.fg{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+label{font-family:"Lato",sans-serif;font-weight:300;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--tm);}
+input,textarea,select{padding:12px 15px;background:var(--wh);border:1px solid var(--cd);font-family:"Noto Serif JP",serif;font-size:.88rem;font-weight:300;color:var(--td);outline:none;width:100%;transition:border-color .2s;}
+input:focus,textarea:focus,select:focus{border-color:var(--go);}
+textarea{resize:vertical;min-height:120px;}
+.fsub{width:100%;padding:17px;background:var(--gd);color:var(--cr);border:none;cursor:pointer;font-family:"Lato",sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;transition:background .3s;margin-top:8px;}
+.fsub:hover{background:var(--gm);}
+
+footer{background:var(--gd);color:rgba(244,234,216,.4);padding:40px 8vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.flo{font-family:"Cormorant Garamond",serif;font-size:1.2rem;color:var(--cr);}
+.flo span{color:var(--go);}
+.fco{font-family:"Lato",sans-serif;font-size:.7rem;letter-spacing:.1em;}
+
+@keyframes fu{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s ease;}
+.rv.vis{opacity:1;transform:translateY(0);}
+
+@media(max-width:900px){
+  nav{padding:16px 24px;}.nls{display:none;}
+  .cert-bar{flex-wrap:wrap;}.cert-item{min-width:50%;}
+  .abt,.wash-inner{grid-template-columns:1fr;}.abw{padding:44px 24px;}
+  .proc-grid{grid-template-columns:repeat(2,1fr);}.proc-item::after{display:none;}.proc-item{padding:20px 12px;}
+  .pg{grid-template-columns:1fr;}
+  .wi{grid-template-columns:1fr;}.wsim{height:200px;}
+  .gs{grid-template-columns:repeat(2,1fr);height:300px;}
+  .ss{grid-template-columns:1fr;height:auto;}
+  .spec-grid{grid-template-columns:1fr;}
+  .cib{grid-template-columns:1fr;}.cii{border-right:none;border-bottom:1px solid rgba(201,163,74,.12);}
+  .fr{grid-template-columns:1fr;}
+}
+
+@media(max-width:480px){
+  .proc-grid{grid-template-columns:1fr;}
+  .proc-item{padding:20px 16px;border-right:none;border-bottom:1px solid var(--cd);}
+  .cert-item{min-width:33.3%;}
+  .proc-en{font-size:.6rem;}
+  .proc-ja{font-size:.8rem;}
+  .proc-desc{font-size:.74rem;}
+}
+
+@media(max-width:600px){
+  #price > div > div[style*="grid-template-columns:repeat(4"]{
+    grid-template-columns:repeat(2,1fr) !important;
+  }
+}
+</style>
+</head><body>
+<nav id="nav"><a class="nl" href="#" style="display:flex;align-items:center;gap:12px;"><img src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img00.jpg" alt="THK Dalat Coffee" style="height:56px;width:56px;object-fit:contain;"><span style="display:flex;flex-direction:column;line-height:1.1;"><span style="font-size:.65rem;letter-spacing:.22em;font-family:'Lato',sans-serif;font-weight:300;color:var(--go);text-transform:uppercase;">THK Dalat</span><span style="font-size:1.1rem;">Mountain<span style="color:var(--go);">.</span>Coffee</span></span></a><ul class="nls"><li><a href="#about">ダラットについて</a></li><li><a href="#process">生産工程</a></li><li><a href="#product">取扱い豆</a></li><li><a href="#price">価格表</a></li><li><a href="#why">選ばれる理由</a></li><li><a href="#company">会社概要</a></li><li><a href="#contact">お問い合わせ</a></li></ul></nav>
+<section class="hero">
+<div class="hbg" style="background-image:url('https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/hero.jpg');"></div>
+<div class="hov"></div>
+<div class="hc"><p class="hew">Vietnam Arabica Cau Dat ／ 生豆専門</p><h1 class="ht">ダラット<br><em>コーヒー</em></h1><p class="hs">FDA・UTZ・ISO 22000認証取得。農薬不使用・有機肥料100%。手摘み選別収穫のArabica生豆を、産地農協から直接お届けします。</p><a href="#contact" class="hcta">お問い合わせ</a></div>
+<div class="hscr">Scroll</div></section>
+<div class="cert-bar">
+<div class="cert-item"><span class="cert-badge">FDA</span><span class="cert-label">米国食品医薬品局認証</span></div>
+<div class="cert-item"><span class="cert-badge">UTZ Certified</span><span class="cert-label">持続可能な農業認証</span></div>
+<div class="cert-item"><span class="cert-badge">ISO 22000</span><span class="cert-label">食品安全マネジメント</span></div>
+<div class="cert-item"><span class="cert-badge">有機肥料</span><span class="cert-label">農薬不使用</span></div>
+<div class="cert-item"><span class="cert-badge">手摘み収穫</span><span class="cert-label">完熟チェリー選別</span></div>
+<div class="cert-item"><span class="cert-badge">水分12.5%</span><span class="cert-label">輸出標準品質</span></div>
+</div>
+<section class="abt" id="about"><div class="aph rv">
+<img src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img01.jpg" alt="農園視察">
+<div class="apho"></div><div class="abd"><div class="abdn">1,500m</div><div class="abdl">平均標高 / Dalat Highlands</div></div></div>
+<div class="abw rv"><p class="sl">About Vietnam Arabica Cau Dat</p><div class="dv"></div><h2 class="st">ダラット高原から、<br>直接あなたの焙煎へ。</h2>
+<p>ベトナム南部・ラムドン省のカウダット農業協同組合（HTX Cầu Đất Coop）は、FDA・UTZ・ISO 22000の三認証を取得した、ベトナム屈指の品質管理体制を持つArabica生産地です。<br><br>播種から3年以上をかけて丁寧に育てたコーヒーチェリーを、完熟したものだけを手で選別収穫。パルピング・発酵・洗浄・天日乾燥という厳格なウォッシュドプロセスを経て、輸出基準（水分12.5%）を満たした生豆のみを出荷します。</p>
+<div class="asts"><div class="asi"><div class="asn">3認証</div><div class="ast">FDA / UTZ / ISO 22000</div></div><div class="asi"><div class="asn">3年+</div><div class="ast">播種から収穫まで</div></div><div class="asi"><div class="asn">12.5%</div><div class="ast">輸出標準水分含有量</div></div></div></div></section>
+
+<!-- DIRECT IMPORT STRIP -->
+<section style="background:var(--green-mid);padding:64px 8vw;">
+  <div style="max-width:960px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:48px;" class="rv">
+      <div style="display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(201,163,74,.4);padding:10px 28px;margin-bottom:24px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a34a" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <span style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);">Direct Import</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a34a" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.4rem);font-weight:300;color:var(--cream);margin-bottom:16px;">ベトナム ダラット農園から<br>直接輸入しています</h3>
+      <p style="font-family:'Noto Serif JP',serif;font-size:.9rem;font-weight:300;color:rgba(244,234,216,.65);line-height:2;max-width:560px;margin:0 auto;">中間業者を介さず、ベトナム・ダラット高原の生産者組合（HTX Cầu Đất Coop）と直接取引。鮮度と品質を保ったまま、日本の皆様のもとへお届けします。</p>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;" class="rv">
+      <div style="text-align:center;padding:24px 20px;flex:1;min-width:140px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,163,74,.12);border:1px solid rgba(201,163,74,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a34a" stroke-width="1.2"><path d="M12 22s-8-6-8-12a8 8 0 0116 0c0 6-8 12-8 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Vietnam</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:.82rem;font-weight:300;color:var(--cream);">ダラット高原<br>生産者組合</div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:6px;">標高1,500m</div>
+      </div>
+      <div style="color:var(--gold);font-size:1.8rem;padding:0 8px;opacity:.5;">›</div>
+      <div style="text-align:center;padding:24px 20px;flex:1;min-width:140px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,163,74,.2);border:1px solid rgba(201,163,74,.5);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a34a" stroke-width="1.2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Direct</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:.82rem;font-weight:300;color:var(--cream);">中間業者なし<br>直接輸入</div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:6px;">品質・鮮度を直送</div>
+      </div>
+      <div style="color:var(--gold);font-size:1.8rem;padding:0 8px;opacity:.5;">›</div>
+      <div style="text-align:center;padding:24px 20px;flex:1;min-width:140px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,163,74,.12);border:1px solid rgba(201,163,74,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a34a" stroke-width="1.2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Quality</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:.82rem;font-weight:300;color:var(--cream);">厳格な<br>品質管理</div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:6px;">ISO 22000認証</div>
+      </div>
+      <div style="color:var(--gold);font-size:1.8rem;padding:0 8px;opacity:.5;">›</div>
+      <div style="text-align:center;padding:24px 20px;flex:1;min-width:140px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,163,74,.12);border:1px solid rgba(201,163,74,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c9a34a" stroke-width="1.2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Japan</div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:.82rem;font-weight:300;color:var(--cream);">日本全国へ<br>お届け</div>
+        <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:6px;">東京都足立区</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proc" id="process">
+<div class="rv" style="text-align:center;"><p class="sl" style="display:inline-block;">Production Process</p></div>
+<div class="dv rv" style="margin:12px auto 0;"></div>
+<h2 class="st rv" style="text-align:center;margin-top:16px;">生産から出荷までの全工程</h2>
+<p class="rv" style="text-align:center;font-size:.88rem;font-weight:300;color:var(--tm);max-width:560px;margin:14px auto 0;line-height:1.9;">一貫した品質を保つため、全工程で標準化されたプロセスを徹底しています。</p>
+<div class="proc-grid rv">
+<div class="proc-item"><span class="proc-icon">🌱</span><div class="proc-en">Sowing</div><div class="proc-ja">播種・育苗</div><div class="proc-desc">UTZ基準準拠の種を植え付け。有機肥料のみ使用し3年以上丁寧に管理。</div></div>
+<div class="proc-item"><span class="proc-icon">🌸</span><div class="proc-en">Flowering</div><div class="proc-ja">開花</div><div class="proc-desc">農家の手厚いケアと灌漑で開花。開花の均一性を確保します。</div></div>
+<div class="proc-item"><span class="proc-icon">🍒</span><div class="proc-en">Fructification</div><div class="proc-ja">結実</div><div class="proc-desc">開花後9〜11ヶ月、果実が均一に成熟するよう管理します。</div></div>
+<div class="proc-item"><span class="proc-icon">✋</span><div class="proc-en">Harvest</div><div class="proc-ja">手摘み収穫</div><div class="proc-desc">完熟チェリーのみを手で選別。数週間かけて複数回収穫します。</div></div>
+<div class="proc-item"><span class="proc-icon">⚙️</span><div class="proc-en">Processing</div><div class="proc-ja">精製・選別</div><div class="proc-desc">ウォッシュド製法で精製。パーチメント除去・等級選別・欠点豆除去を実施。</div></div>
+<div class="proc-item"><span class="proc-icon">📦</span><div class="proc-en">Store & Ship</div><div class="proc-ja">保管・出荷</div><div class="proc-desc">水分12.5%の輸出標準を満たした状態で保管・出荷します。</div></div>
+</div></section>
+<section class="wash-detail"><div class="wash-inner">
+<div class="rv"><p class="sl">Washed Process Detail</p><div class="dv"></div><h2 class="st">ウォッシュド精製の詳細工程</h2>
+<p style="font-size:.88rem;line-height:2;font-weight:300;color:rgba(244,234,216,.7);margin-bottom:28px;">品質に直結する最重要プロセス。標準化・厳格化された手順で一貫した品質を実現しています。</p>
+<div class="spec-grid">
+<div class="spec-item"><div class="spec-key">発酵時間</div><div class="spec-val">18〜24時間</div></div>
+<div class="spec-item"><div class="spec-key">発酵温度</div><div class="spec-val">18〜25℃</div></div>
+<div class="spec-item"><div class="spec-key">pH管理</div><div class="spec-val">pH 4.5</div></div>
+<div class="spec-item"><div class="spec-key">乾燥期間</div><div class="spec-val">3〜4日間</div></div>
+<div class="spec-item"><div class="spec-key">最終水分</div><div class="spec-val">12.5%（輸出基準）</div></div>
+<div class="spec-item"><div class="spec-key">光管理</div><div class="spec-val">直射日光を避けて発酵</div></div>
+</div></div>
+<div class="wash-steps rv">
+<div class="wash-step"><div class="wash-step-num">01</div><div><div class="wash-step-title">パルピング</div><div class="wash-step-body">パルピングマシンでチェリーの外皮を除去。その後1〜2回の水洗いで残った外皮をきれいに取り除きます。</div></div></div>
+<div class="wash-step"><div class="wash-step-num">02</div><div><div class="wash-step-title">自然発酵</div><div class="wash-step-body">清潔な水を使用し、直射日光を避けた環境で18〜24時間発酵。pH 4.5・温度18〜25℃を管理します。</div></div></div>
+<div class="wash-step"><div class="wash-step-num">03</div><div><div class="wash-step-title">水洗浄</div><div class="wash-step-body">発酵後、清水で繰り返し洗浄。ミューシレージ（粘液質）が完全に除去されるまで複数回実施します。</div></div></div>
+<div class="wash-step"><div class="wash-step-num">04</div><div><div class="wash-step-title">天日乾燥</div><div class="wash-step-body">天候に応じて3〜4日間乾燥。輸出基準である水分含有量12.5%になるまで管理します。</div></div></div>
+<div class="wash-step"><div class="wash-step-num">05</div><div><div class="wash-step-title">脱殻・等級選別</div><div class="wash-step-body">乾燥後、機械でパーチメント（内果皮）とシルバースキンを除去。サイズ別に等級選別し、欠点豆・異物を完全排除します。</div></div></div>
+<div class="wash-step"><div class="wash-step-num">06</div><div><div class="wash-step-title">品質確認・保管</div><div class="wash-step-body">最高品質の豆のみを選別し、輸出標準の水分量（12.5%）を維持した保管設備で管理します。</div></div></div>
+</div></div></section>
+<section class="ps" id="product"><div class="ph rv"><p class="sl">Products</p><div class="dv"></div><h2 class="st">取扱い豆のご紹介</h2><p style="font-size:.9rem;font-weight:300;color:var(--tm);max-width:540px;line-height:1.9;">すべてVietnam Arabica Cau Dat。ご希望の精製方法でご提供可能です。サンプル・価格はお問い合わせください。</p></div>
+<div class="pg">
+<div class="pc rv"><div class="piw"><img class="pim" src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img02.jpg" alt="生豆"></div><div class="pcb"><div class="por">Washed / ウォッシュド</div><h3 class="pn">ウォッシュド<br>アラビカ</h3><p class="pd">カウダット農協の主力精製法。パルピング→18〜24H発酵（pH4.5・18〜25℃）→清水洗浄→天日乾燥3〜4日。クリーンで透明感のある味わい、柑橘系の酸とフローラルな余韻が特徴。</p><span class="pt">生豆 / Green Bean</span></div></div>
+<div class="pc rv"><div class="piw"><img class="pim" src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img03.jpg" alt="コーヒーチェリー"></div><div class="pcb"><div class="por">Natural / ナチュラル</div><h3 class="pn">ナチュラル<br>アラビカ</h3><p class="pd">チェリーのまま乾燥させる伝統的精製法。果実感豊かな甘みと複雑なボディ。ベリー系フレーバーと穏やかな発酵ノート。個性的なカップを求める焙煎家に。</p><span class="pt">生豆 / Green Bean</span></div></div>
+<div class="pc rv"><div class="piw"><img class="pim" src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img04.jpg" alt="手の上の生豆"></div><div class="pcb"><div class="por">Honey / ハニー</div><h3 class="pn">ハニー<br>アラビカ</h3><p class="pd">果肉を一部残した状態で乾燥。ウォッシュドの清潔感とナチュラルの甘みを兼ね備えた中間プロファイル。まろやかな甘みとフルーティさのバランスが秀逸。</p><span class="pt">生豆 / Green Bean</span></div></div>
+</div></section>
+
+
+<!-- PRICE TABLE -->
+<section style="background:var(--green-dark);color:var(--cream);padding:100px 8vw;" id="price">
+  <div style="max-width:960px;margin:0 auto;">
+    <p style="font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;text-align:center;" class="rv">Price List</p>
+    <div style="width:40px;height:1px;background:var(--gold);margin:0 auto 28px;" class="rv"></div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--cream);text-align:center;margin-bottom:8px;" class="rv">価格表</h2>
+    <p style="text-align:center;font-size:.86rem;font-weight:300;color:rgba(244,234,216,.55);margin-bottom:56px;" class="rv">ベトナム ダラット産 アラビカ生豆 ／ 1kgあたり単価（税込）</p>
+
+    <!-- 価格カード -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;" class="rv">
+
+      <!-- 1〜4kg -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(201,163,74,.2);padding:32px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;transition:transform .3s,background .3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.background='rgba(201,163,74,.07)'" onmouseout="this.style.transform='';this.style.background='rgba(255,255,255,.04)'">
+        <!-- 豆アイコン 1個 -->
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px;min-height:48px;align-items:center;">
+          <svg width="28" height="28" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".9"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,234,216,.5);">1〜4 kg</div>
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--cream);line-height:1;">3,630<span style="font-size:.9rem;"> 円</span></div>
+          <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:4px;">税別 3,300円 / kg</div>
+        </div>
+      </div>
+
+      <!-- 5〜9kg -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(201,163,74,.2);padding:32px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;transition:transform .3s,background .3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.background='rgba(201,163,74,.07)'" onmouseout="this.style.transform='';this.style.background='rgba(255,255,255,.04)'">
+        <!-- 豆アイコン 3個 -->
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:4px;min-height:48px;align-items:center;">
+          <svg width="22" height="22" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".7"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="28" height="28" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".9"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="22" height="22" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".7"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,234,216,.5);">5〜9 kg</div>
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--cream);line-height:1;">3,520<span style="font-size:.9rem;"> 円</span></div>
+          <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:4px;">税別 3,200円 / kg</div>
+        </div>
+      </div>
+
+      <!-- 10kg以上 人気 -->
+      <div style="background:rgba(201,163,74,.1);border:1px solid rgba(201,163,74,.45);padding:32px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;transition:transform .3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+        <!-- 豆アイコン 6個 -->
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:3px;min-height:48px;align-items:center;max-width:90px;">
+          <svg width="20" height="20" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".7"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="20" height="20" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".8"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="26" height="26" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".95"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="20" height="20" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".7"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="20" height="20" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".8"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="20" height="20" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".7"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);">10kg 以上 ／ 人気</div>
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;">3,410<span style="font-size:.9rem;"> 円</span></div>
+          <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(201,163,74,.55);margin-top:4px;">税別 3,100円 / kg</div>
+        </div>
+      </div>
+
+      <!-- 30kg以上 -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(201,163,74,.2);padding:32px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;transition:transform .3s,background .3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.background='rgba(201,163,74,.07)'" onmouseout="this.style.transform='';this.style.background='rgba(255,255,255,.04)'">
+        <!-- 豆アイコン 10個 -->
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2px;min-height:48px;align-items:center;max-width:90px;">
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".65"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".75"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".65"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".75"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="22" height="22" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".9"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".65"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".75"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".65"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".75"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+          <svg width="16" height="16" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="10" ry="13" fill="#c9a34a" opacity=".65"/><path d="M14 2 Q14 14 14 26" stroke="#162d1e" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <div style="font-family:'Lato',sans-serif;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,234,216,.5);">30kg 以上</div>
+        <div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--cream);line-height:1;">3,300<span style="font-size:.9rem;"> 円</span></div>
+          <div style="font-family:'Lato',sans-serif;font-size:.62rem;color:rgba(244,234,216,.4);margin-top:4px;">税別 3,000円 / kg</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 備考 -->
+    <div style="border:1px solid rgba(201,163,74,.25);padding:24px 32px;font-size:.85rem;line-height:2.2;font-weight:300;color:rgba(244,234,216,.8);margin-bottom:40px;" class="rv">
+      <p>・上記価格は1kgあたりの単価です。</p>
+      <p>・送料は別途となります。ご注文数量および配送先により別途ご案内いたします。</p>
+      <p>・在庫状況により、納期はご注文時にご確認のうえご案内いたします。</p>
+      <p>・価格は予告なく変更となる場合がございます。</p>
+    </div>
+
+    <div style="text-align:center;" class="rv">
+      <a href="#contact" style="display:inline-block;padding:16px 44px;border:1px solid var(--gold);color:var(--gold);font-family:'Lato',sans-serif;font-weight:300;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:background .3s,color .3s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--green-dark)'" onmouseout="this.style.background='';this.style.color='var(--gold)'">サンプル・お見積りのご依頼</a>
+    </div>
+  </div>
+</section>
+
+
+<div class="gs">
+<div><img src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img05.jpg" alt="乾燥工程" loading="lazy"></div>
+<div><img src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img06.jpg" alt="農協看板" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=700&q=80&fit=crop" alt="農園" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80&fit=crop" alt="生豆" loading="lazy"></div>
+</div>
+<section class="ws" id="why"><div class="wi"><div class="rv"><p class="sl">Why Us</p><div class="dv"></div><h2 class="st">選ばれる<br>理由</h2>
+<img class="wsim" src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img07.jpg" alt="収穫" loading="lazy"></div>
+<div class="wl">
+<div class="wli rv"><div class="wn">01</div><div><div class="wit">FDA・UTZ・ISO 22000 三認証取得</div><p class="wib">カウダット農協は米国FDA・UTZ認証・ISO 22000の三認証を取得。国際基準に準拠した品質管理体制を持つ、信頼性の高い生産地です。</p></div></div>
+<div class="wli rv"><div class="wn">02</div><div><div class="wit">農薬不使用・有機肥料100%</div><p class="wib">UTZ認証基準を遵守し、農薬を一切使用しません。有機肥料のみで育てた、安全で環境にやさしいArabicaです。</p></div></div>
+<div class="wli rv"><div class="wn">03</div><div><div class="wit">手摘み選別・厳格な精製工程</div><p class="wib">完熟チェリーのみを手で選別収穫。18〜24時間の自然発酵・天日乾燥・等級選別・欠点豆除去まで、全工程を標準化・厳格管理しています。</p></div></div>
+<div class="wli rv"><div class="wn">04</div><div><div class="wit">産地農協との直接契約</div><p class="wib">中間業者を排除し、HTX Cầu Đất Coopと直接契約。高品質な豆を適正価格で、安定的に供給します。</p></div></div>
+</div></div></section>
+<div class="ss">
+<div><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80&fit=crop" alt="精製工程" loading="lazy"></div>
+<div><img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?w=700&q=80&fit=crop" alt="ベトナム高原" loading="lazy"></div>
+</div>
+
+<section style="background:var(--cream);padding:100px 8vw;" id="company">
+  <div style="max-width:860px;margin:0 auto;">
+    <p style="font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;text-align:center;" class="rv">Company</p>
+    <div style="width:40px;height:1px;background:var(--gold);margin:0 auto 28px;" class="rv"></div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--green-dark);text-align:center;margin-bottom:48px;" class="rv">会社概要</h2>
+
+    <table class="rv" style="width:100%;border-collapse:collapse;font-size:.92rem;font-weight:300;line-height:2;">
+      <tbody>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;width:28%;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">会社名</th>
+          <td style="padding:22px 0;color:var(--text-dark);">東洋皮革株式会社</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">ブランド</th>
+          <td style="padding:22px 0;color:var(--text-dark);">THK DALAT MOUNTAIN COFFEE ROASTER<br>ダラットコーヒー</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">代表者</th>
+          <td style="padding:22px 0;color:var(--text-dark);">斉京 照二</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">設立</th>
+          <td style="padding:22px 0;color:var(--text-dark);">1941年創業 / 1947年設立</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">所在地</th>
+          <td style="padding:22px 0;color:var(--text-dark);">〒123-0851 東京都足立区梅田4-3-18</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">TEL / FAX</th>
+          <td style="padding:22px 0;color:var(--text-dark);">03-3849-1186 / 03-3887-3254</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">E-MAIL</th>
+          <td style="padding:22px 0;"><a href="mailto:thk@lily.ocn.ne.jp" style="color:var(--green-mid);text-decoration:none;">thk@lily.ocn.ne.jp</a></td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">ウェブサイト</th>
+          <td style="padding:22px 0;"><a href="https://toyohikaku.com" target="_blank" style="color:var(--green-mid);text-decoration:none;">https://toyohikaku.com</a></td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--cream-dark);">
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">事業内容</th>
+          <td style="padding:22px 0;color:var(--text-dark);">エキゾチックレザー専門タンナー<br>（ワニ・ヘビ・トカゲ等の原皮輸入・なめし・染色・仕上げ・輸出）<br>皮革製造コンサルティング / NFT販売 / コーヒー事業</td>
+        </tr>
+        <tr>
+          <th style="padding:22px 0;font-family:'Lato',sans-serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:300;vertical-align:top;text-align:left;">認定</th>
+          <td style="padding:22px 0;color:var(--text-dark);">足立ブランド認定企業（2013年度）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cs" id="contact"><div class="ci"><p class="sl rv" style="text-align:center;">Contact</p><div class="dv rv" style="margin:0 auto 32px;"></div><h2 class="st rv">お問い合わせ</h2><p class="csub rv">価格・ロット・サンプルのご依頼など、まずはお気軽にご連絡ください。<br>通常2営業日以内にご返答いたします。</p>
+<div class="cib rv"><div class="cii"><div class="cil">TEL</div><div class="civ">03-3849-1186</div></div><div class="cii"><div class="cil">Email</div><div class="civ">thk@lily.ocn.ne.jp</div></div><div class="cii"><div class="cil">受付時間</div><div class="civ" style="font-size:1rem;">平日 10:00〜18:00</div></div></div>
+<form class="rv" onsubmit="hs(event)"><div class="fr"><div class="fg"><label>お名前 *</label><input type="text" placeholder="山田 太郎" required></div><div class="fg"><label>会社名・屋号</label><input type="text" placeholder="○○焙煎所"></div></div><div class="fr"><div class="fg"><label>メールアドレス *</label><input type="email" placeholder="example@email.com" required></div><div class="fg"><label>電話番号</label><input type="tel" placeholder="03-0000-0000"></div></div><div class="fg"><label>お問い合わせ種別</label><select><option value="">選択してください</option><option>サンプルのご依頼</option><option>価格・ロットのご相談</option><option>Washed / Natural / Honey 精製別のご相談</option><option>認証・品質資料のご請求</option><option>その他</option></select></div><div class="fg"><label>お問い合わせ内容 *</label><textarea placeholder="ご希望のロット数・精製方法・ご不明な点などをご記入ください。" required></textarea></div><button type="submit" class="fsub">送信する</button></form></div></section>
+
+<!-- RELATED COMPANY BANNER -->
+<section style="background:#f8f4ee;padding:48px 8vw;border-top:1px solid rgba(22,45,30,.08);">
+  <div style="max-width:960px;margin:0 auto;text-align:center;">
+    <p style="font-family:'Lato',sans-serif;font-size:.65rem;letter-spacing:.28em;text-transform:uppercase;color:#888;margin-bottom:24px;">Related Company</p>
+    <a href="https://kaleido-sniper.jp/" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;" onmouseover="this.style.opacity='.75'" onmouseout="this.style.opacity='1'" style="transition:opacity .2s;">
+      <div style="display:inline-flex;align-items:center;gap:14px;border:1px solid rgba(22,45,30,.15);padding:18px 36px;background:white;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:box-shadow .3s;" onmouseover="this.style.boxShadow='0 6px 24px rgba(0,0,0,.12)'" onmouseout="this.style.boxShadow='0 2px 12px rgba(0,0,0,.06)'">
+        <!-- Kaleido ロゴ風SVG -->
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="4" fill="#1a1a1a"/>
+          <path d="M10 9h3v8l6-8h4l-7 9 7 10h-4l-6-8v8h-3V9z" fill="white"/>
+        </svg>
+        <div style="text-align:left;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.06em;color:#1a1a1a;line-height:1;">Kaleido<span style="color:#c0392b;">.JP</span></div>
+          <div style="font-family:'Lato',sans-serif;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:#888;margin-top:3px;">KaleidoSniper 日本正規代理店</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5" style="margin-left:8px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </div>
+    </a>
+    <p style="font-family:'Noto Serif JP',serif;font-size:.78rem;font-weight:300;color:#999;margin-top:16px;">コーヒー焙煎機の正規代理店 KaleidoSniper Japan</p>
+  </div>
+</section>
+
+<footer><div class="flo" style="display:flex;align-items:center;gap:16px;"><img src="https://raw.githubusercontent.com/yanoshincp2-crypto/thkdalat-coffee/main/img08.jpg" alt="THK Dalat" style="height:80px;width:80px;object-fit:contain;opacity:.95;"><div><div style="font-family:'Lato',sans-serif;font-size:.6rem;letter-spacing:.25em;color:var(--go);text-transform:uppercase;margin-bottom:4px;">THK Dalat Mountain</div><div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--cr);">Coffee<span style="color:var(--go);"> Roaster</span></div></div></div><div style="font-family:'Lato',sans-serif;font-size:.68rem;color:rgba(244,234,216,.32);text-align:center;">Vietnam Arabica Cau Dat ／ HTX Cầu Đất Coop ／ FDA・UTZ・ISO 22000</div><div class="fco">東洋皮革株式会社 &nbsp;|&nbsp; 代表：斉京 照二<br>&copy; 2025 ダラットコーヒー All rights reserved.</div></footer>
+<script>
+const nav=document.getElementById("nav");
+window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.scrollY>60);});
+const rvs=document.querySelectorAll(".rv");
+const ob=new IntersectionObserver((es)=>{es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add("vis"),i*80);ob.unobserve(e.target);}});},{threshold:0.06});
+rvs.forEach(el=>ob.observe(el));
+function hs(e){e.preventDefault();const b=e.target.querySelector(".fsub");b.textContent="送信しました。ありがとうございます。";b.style.background="#2a5438";b.disabled=true;}
+</script></body></html>
